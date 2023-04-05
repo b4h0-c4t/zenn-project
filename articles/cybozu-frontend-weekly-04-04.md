@@ -1,5 +1,5 @@
 ---
-title: "Rome v12リリースなど: Cybozu Frontend Weekly (2023-04-04 号)"
+title: "Rome v12リリースなど: Cybozu Frontend Weekly (2023-04-04号)"
 emoji: "🌸"
 type: "tech"
 topics: ["CybozuFrontendWeekly", "frontend"]
