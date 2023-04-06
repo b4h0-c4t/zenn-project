@@ -46,11 +46,11 @@ Stroybook の v7 がプレリリースされました 🎉
 - [Docs を MDX2 でオーバーホールする機能の追加](https://storybook.js.org/blog/storybook-7-docs/)
 - etc
 
-## layer - vanilla extract
+## layer - vanilla-extract
 
 https://vanilla-extract.style/documentation/api/layer/
 
-vanilla extract が layer に対応しました。
+vanilla-extract が layer に対応しました。
 ポリフィルが使用されているわけではないので、現在 layer 機能が有効になっているクライアントでのみ動作するようです。
 
 ## Styling Addon: configure styles and themes in Storybook
@@ -89,14 +89,14 @@ V2 の新 API に対応する機能は `future.v2_` フラグで管理され、u
 https://thenewstack.io/rich-harris-talks-sveltekit-and-whats-next-for-svelte/
 
 Svelte に大きめの修正をする準備が進行中であるという話です。
-Svelte 周りの内部コードが TypeScript から JavaScript へ置き換えられるほか、大きなアイデアが取り入れられる予定だという。
+Svelte 周りの内部コードが TypeScript から JavaScript へ置き換えられるほか、大きなアイデアが取り入れられる予定だそうです。
 
 ## One In Two New Npm Packages Is SEO Spam Right Now
 
 https://blog.sandworm.dev/one-in-two-new-npm-packages-is-seo-spam-right-now
 
 2023 年 3 月に新しく公開された npm パッケージのうち半数以上が SEO スパムとして利用されているという話です。
-ロシアの Telegram チャンネルや無料の電子書籍、V-Bucks といった典型的なスパムとして悪用されているようです。
+ロシア語話者をターゲットとした悪意ある Telegram のチャンネルへの誘導や無料の電子書籍、ゲームの課金通貨といった典型的なスパムとして悪用されているようです。
 
 ## New to the web platform in March
 
