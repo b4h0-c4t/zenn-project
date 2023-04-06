@@ -57,14 +57,14 @@ vanilla extract が layer に対応しました。
 
 https://storybook.js.org/blog/styling-addon-configure-styles-and-themes-in-storybook/
 
-UI コンポーネントにテーマを提供するためのアドオンの話。
+UI コンポーネントにテーマを提供するためのアドオンの話です。
 このアドオンにより、フレームワークに依らずスタイルを統一してかけるようになります。
 
 ## ZOZOTOWN の Web ホーム画面を Next.js でリプレイスして得た知見
 
 https://techblog.zozo.com/entry/replacing-zozo-with-nextjs-knowledge
 
-ZOZOTOWN のフロントエンドをリプレイスするプロジェクトの話。
+ZOZOTOWN のフロントエンドをリプレイスするプロジェクトの話です。
 開発効率の向上・運用コストの削減・人材獲得を目的として、API のマイクロサービス化とフロントエンドの新フレームワーク導入を実施したようです。
 カナリアリリースやストラングラーパターンといった手法、アーキテクチャの導入により無停止での段階的なリプレイスに成功しています。
 
@@ -72,7 +72,7 @@ ZOZOTOWN のフロントエンドをリプレイスするプロジェクトの�
 
 https://zenn.dev/azukiazusa/articles/superflare-for-cloudflare-workers
 
-D1 Database や R2 Storage むけのユーティリティ機能を提供しているフルスタックツールキット Superflare を試した話。
+D1 Database や R2 Storage むけのユーティリティ機能を提供しているフルスタックツールキット Superflare を試した話です。
 記事では簡単なアルバムアプリの実装からデプロイまでを通して Superflare の使い方に触れています。
 
 ## Future Proofing Your Remix App
@@ -88,21 +88,21 @@ V2 の新 API に対応する機能は `future.v2_` フラグで管理され、u
 
 https://thenewstack.io/rich-harris-talks-sveltekit-and-whats-next-for-svelte/
 
-Svelte に大きめの修正をする準備が進行中であるという話。
+Svelte に大きめの修正をする準備が進行中であるという話です。
 Svelte 周りの内部コードが TypeScript から JavaScript へ置き換えられるほか、大きなアイデアが取り入れられる予定だという。
 
 ## One In Two New Npm Packages Is SEO Spam Right Now
 
 https://blog.sandworm.dev/one-in-two-new-npm-packages-is-seo-spam-right-now
 
-2023 年 3 月に新しく公開された npm パッケージのうち半数以上が SEO スパムとして利用されているという話。
+2023 年 3 月に新しく公開された npm パッケージのうち半数以上が SEO スパムとして利用されているという話です。
 ロシアの Telegram チャンネルや無料の電子書籍、V-Bucks といった典型的なスパムとして悪用されているようです。
 
 ## New to the web platform in March
 
 https://web.dev/web-platform-03-2023/
 
-各主要 Web ブラウザが 3 月にリリースした追加機能がまとめられた記事。
+各主要 Web ブラウザが 3 月にリリースした追加機能がまとめられた記事です。
 
 # あとがき
 
