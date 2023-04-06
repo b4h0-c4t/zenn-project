@@ -103,3 +103,25 @@ https://blog.sandworm.dev/one-in-two-new-npm-packages-is-seo-spam-right-now
 https://web.dev/web-platform-03-2023/
 
 各主要 Web ブラウザが 3 月にリリースした追加機能がまとめられた記事。
+
+# あとがき
+
+サイボウズでは毎月、最終火曜日の 17 時から Frontend Monthly というイベントを YouTube Live で開催しています。その月のフロントエンド注目ニュースや、ゲストを呼んでの対談など、フロントエンドに関する発信をしていますので是非どうぞ！
+
+https://cybozu.github.io/frontend-monthly/
+
+また、サイボウズでは一緒にサイボウズのフロントエンドをより良くする仲間を募集しています。興味ある方はこちら ↓ から！
+
+【フロントエンドエキスパート】
+サイボウズのフロントエンドを最高にするためのチームです。
+
+https://cybozu.github.io/frontend-expert/
+
+https://cybozu.co.jp/recruit/entry/career/front-end-expert.html
+
+【フロントエンドエンジニア（kintone アーキテクチャ刷新 PJ）】
+クラウドサービス「kintone」のフロントエンドを新しくしています。
+
+https://blog.cybozu.io/archive/category/%E3%83%95%E3%83%AD%E3%83%AA%E3%82%A2
+
+https://cybozu.co.jp/recruit/entry/career/front-end-engineer-kintone.html
