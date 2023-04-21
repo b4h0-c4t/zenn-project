@@ -37,20 +37,18 @@ console.log(Object.keys(json)[0], json[Object.keys(json)]);
 
 ```js:reader.js
 const fs = require("fs");
-```
 
 const reader = (fileName) => fs.readFileSync(fileName);
 
 module.exports = reader;
-
-````
+```
 
 ```json:resource.json
 {
   "hello": "permissions!"
 }
 
-````
+```
 
 目的のコードが完成したら、次に実行ファイルすべてに対してポリシーを設定していきます。
 
