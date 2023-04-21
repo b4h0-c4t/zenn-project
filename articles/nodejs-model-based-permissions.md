@@ -28,31 +28,33 @@ Module-based Permissions は名前の通り、実行ファイルで権限を管�
 `reader.js` : 渡されたファイル名を元にファイルの読み込みを実行して Buffer を返却するプログラム
 `resource.json` : 読み込まれるファイル
 
-```main.js:js
+```js:main.js
 const reader = require("./reader.js");
 
 const json = JSON.parse(reader("resource.json"));
 console.log(Object.keys(json)[0], json[Object.keys(json)]);
 ```
 
-```reader.js:js
+```js:reader.js
 const fs = require("fs");
+```
 
 const reader = (fileName) => fs.readFileSync(fileName);
 
 module.exports = reader;
-```
 
-```resource.json:json
+````
+
+```json:resource.json
 {
   "hello": "permissions!"
 }
 
-```
+````
 
 目的のコードが完成したら、次に実行ファイルすべてに対してポリシーを設定していきます。
 
-```policy.json:json
+```json:policy.json
 {
   "resources": {
     "./main.js": {
@@ -76,7 +78,7 @@ module.exports = reader;
 
 ドキュメントに記載されている通り、一例として後述のようなコマンドで生成することができます。
 
-```sh
+```
 node -e 'process.stdout.write("sha256-");process.stdin.pipe(crypto.createHash("sha256").setEncoding("base64")).pipe(process.stdout)' < {ファイル名}
 ```
 
