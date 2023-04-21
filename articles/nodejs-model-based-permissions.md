@@ -99,3 +99,55 @@ hello permissions!
 このように意図しない改変がされた実行プログラムに対してそれを検知できるのが Module-based Permission の機能になります。
 
 ## Process-based Permissions
+
+Process-based Permissions では、Permission Model を用いて実行プログラムのアクセス制御を行います。
+この機能が Module-based Permissions と異なるのは、モジュール単位ではなく実行プロセスごとに権限の付与ができる点です。
+
+この機能を有効化するには、実行時に `--experimental-permission` フラグを使用します。
+試しに Module-based Permissions の解説で取り扱った `main.js` に対してこの機能を有効化してみましょう。
+
+```
+$ node --experimental-permission main.js
+node:internal/modules/cjs/loader:179
+  const result = internalModuleStat(filename);
+                 ^
+
+Error: Access to this API has been restricted
+    at stat (node:internal/modules/cjs/loader:179:18)
+    at Module._findPath (node:internal/modules/cjs/loader:651:16)
+    at resolveMainPath (node:internal/modules/run_main:15:25)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:24)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'ERR_ACCESS_DENIED',
+  permission: 'FileSystemRead',
+  resource: '/main.js'
+}
+```
+
+何も指定せずに実行すると、上の通り FileSystemRead の権限がないとしてエラーになります。
+このように、`--experimental-permission` フラグを有効化すると、Permission Model に定義される全ての権限に対して制限がかけられます。
+
+今回の実行プログラムでは FileSystem の Read を利用しているため、実行時にカレントディレクトリに対してファイル読み込みの権限を付与してみます。
+
+```
+$ node --experimental-permission --allow-fs-read=$(pwd)/resource.json main.js
+hello permissions!
+(node:22823) ExperimentalWarning: Permission is an experimental feature
+(Use `node --trace-warnings ...` to show where the warning was created)
+```
+
+問題なく実行できましたね。
+
+Permission Model では、FileSystem 以外にも、全てのネイティブモジュールが定義されており、利用する機能にアクセスする場合は個別に有効かを実施する必要があります。
+また、実行プログラム側の Runtime API として `process.permission.has()` 関数が提供され、boolean で特定のモジュールに対するアクセス権限があるかどうかを確認することができます。
+
+```js
+process.permission.has("fs.write"); // true or false
+```
+
+これによって、アクセス権限の有無による実行エラーの対処ができます。
+
+## 最後に
+
+本稿では、Node.js v20.0.0 の実験的機能である Process-based Permissions について解説しました。
+日頃、Node.js の実行コードのアクセス権限についてあまり意識をしていない方も多いと思いますが、これらを利用してより厳格なセキュリティを構築していきましょう！
