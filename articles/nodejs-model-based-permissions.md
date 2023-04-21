@@ -3,7 +3,7 @@ title: "Node.js v20.0.0 の新機能 Process-based Permissions"
 emoji: "🔑"
 type: "tech"
 topics: ["frontend", "nodejs"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
@@ -47,7 +47,6 @@ module.exports = reader;
 {
   "hello": "permissions!"
 }
-
 ```
 
 目的のコードが完成したら、次に実行ファイルすべてに対してポリシーを設定していきます。
