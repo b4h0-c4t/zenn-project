@@ -3,7 +3,7 @@ title: "Rome v12リリースなど: Cybozu Frontend Weekly (2023-04-04号)"
 emoji: "🌸"
 type: "tech"
 topics: ["CybozuFrontendWeekly", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
