@@ -7,7 +7,7 @@ published: false
 publication_name: "cybozu_frontend"
 ---
 
-## Permissions とは
+# Permissions とは
 
 Node.js には、コードを読み込む際にそのコードが得られる権限をポリシーとして宣言できる機能があります。
 
@@ -17,7 +17,7 @@ https://nodejs.org/dist/v20.0.0/docs/api/permissions.html#process-based-permissi
 
 以前までは Module-based Permissions と呼ばれる、モジュール単位で権限を指定可能な機能が実験的な機能として導入されていました。
 
-## Module-based Permissions
+# Module-based Permissions
 
 本題に入る前に、Module-based Permissions についても少し触れておきます。
 Module-based Permissions は名前の通り、実行ファイルで権限を管理するための機能です。
@@ -98,7 +98,7 @@ hello permissions!
 これまで作った実行プログラムに対して、`require` 先を増やしたりコードを改変した場合、`Error [ERR_MANIFEST_ASSERT_INTEGRITY]: (以下略)` のようなエラーが表示されて実行できないことがわかると思います。
 このように意図しない改変がされた実行プログラムに対してそれを検知できるのが Module-based Permission の機能になります。
 
-## Process-based Permissions
+# Process-based Permissions
 
 Process-based Permissions では、Permission Model を用いて実行プログラムのアクセス制御を行います。
 この機能が Module-based Permissions と異なるのは、モジュール単位ではなく実行プロセスごとに権限の付与ができる点です。
@@ -147,7 +147,7 @@ process.permission.has("fs.write"); // true or false
 
 これによって、アクセス権限の有無による実行エラーの対処ができます。
 
-## 最後に
+# 最後に
 
 本稿では、Node.js v20.0.0 の実験的機能である Process-based Permissions について解説しました。
 日頃、Node.js の実行コードのアクセス権限についてあまり意識をしていない方も多いと思いますが、これらを利用してより厳格なセキュリティを構築していきましょう！
