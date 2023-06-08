@@ -23,7 +23,7 @@ https://twitter.com/argyleink/status/1661800757304381443?s=20
 
 View Transitions API を使って MPA で画面遷移時にアニメーションを追加するサンプルページを紹介しているツイートです。
 Chrome で `chrome://flags/#view-transition-on-navigation` のフラグを有効化することで、手元の環境でも View Transition API の動作を確認することができます。
-また、現在この API は CSS Working Group によって Candidate Recommendation として取り上げられているようです。
+また、この API は 近々 Working Draft から Candidate Recommendation になるかもしれません。
 
 ## Introducing the popover API
 
