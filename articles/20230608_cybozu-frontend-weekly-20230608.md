@@ -128,7 +128,7 @@ CSS `@scope` が Chrome 117 に実装されるようです。
 https://www.prisma.io/blog/introducing-pulse-jtu4UPC8ujy4
 
 Prisma Client から DB の更新情報を購読し、リアルタイムでの更新処理を可能にするための機能 Prisma Pulse が発表されました。
-DB の状態確認のためにポーリングといった原始的な手段を用いずにシームレスな通信が可能になるようです。
+DB の状態確認のためにポーリングといった手段を用いずにシームレスな通信が可能になるようです。
 
 ## JavaScript Macros in Bun
 
