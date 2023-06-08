@@ -3,7 +3,7 @@ title: "TypeScript 5.1 RCなど: Cybozu Frontend Weekly (2023-05-30号)"
 emoji: "🌸"
 type: "tech"
 topics: ["CybozuFrontendWeekly", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
