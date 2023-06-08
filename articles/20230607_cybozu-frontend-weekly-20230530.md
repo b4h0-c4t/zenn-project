@@ -77,7 +77,7 @@ TypeScript 5.1 のアナウンスです。
 https://blog.vuejs.org/posts/vue-3-3
 
 Vue 3.3 がリリースされました。
-大きな変更点としては `<script set up lang="ts">` で TypeScript の構文が利用できるようになったところでしょうか。
+`<script setup>` におけるジェネリック型のパラメータサポートや `defineProps` および `defineEmits` の型パラメータが外部インポートに対応するといった更新がされています。
 
 ## Bun v0.6.0
 
