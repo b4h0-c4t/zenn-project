@@ -1,9 +1,9 @@
 ---
-title: "CSS WD にある @scope ルール"
+title: "Intent to Ship された @scope ルールの話"
 emoji: "🔍"
 type: "tech"
 topics: ["frontend", "css"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
