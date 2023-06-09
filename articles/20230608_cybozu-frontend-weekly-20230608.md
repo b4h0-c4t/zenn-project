@@ -3,7 +3,7 @@ title: "View Transition APIなど: Cybozu Frontend Weekly (2023-06-06号)"
 emoji: "🌸"
 type: "tech"
 topics: ["CybozuFrontendWeekly", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
