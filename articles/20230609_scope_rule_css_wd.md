@@ -1,11 +1,13 @@
 ---
-title: "CSS WD にある @scope ルールについて"
-emoji: "🌸"
+title: "CSS WD にある @scope ルール"
+emoji: "🔍"
 type: "tech"
 topics: ["frontend", "css"]
 published: false
 publication_name: "cybozu_frontend"
 ---
+
+:::この記事は 2023/06/09 現在の [W3C Editor's Draft](https://drafts.csswg.org/css-cascade-6/#scope-atrule) を元に書いているため、今後の更新で内容が大きく変わる可能性があります。:::
 
 # `@scope` ルール
 
