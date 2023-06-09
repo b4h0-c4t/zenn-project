@@ -1,5 +1,5 @@
 ---
-title: "CSS WD にある @scope ルールについて"
+title: "CSS WD にある @scope ルール"
 emoji: "🌸"
 type: "tech"
 topics: ["frontend", "css"]
