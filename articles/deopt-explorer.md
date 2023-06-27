@@ -3,7 +3,7 @@ title: "Webアプリのパフォーマンス改善にも使える！Deopt Explor
 emoji: "🕛"
 type: "tech"
 topics: ["frontend", "performance", "vscode"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
