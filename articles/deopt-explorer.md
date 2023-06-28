@@ -39,7 +39,7 @@ JavaScript のオブジェクトにはプログラム上型の情報が存在し
 
 ```js:example_01.js
 const f(x) => {
-  let sum = x.a + a.b;
+  let sum = x.a + x.b;
   return sum;
 };
 
@@ -61,7 +61,7 @@ Map x {
 
 ```js:example_02.js
 const f(x) => {
-  let sum = x.a + a.b;
+  let sum = x.a + x.b;
   if(x.c) sum + x.c;
   return sum;
 };
@@ -94,7 +94,7 @@ Map x {
 
 ```js:example_03.js
 const f(x) => {
-  let sum = x.a + a.b;
+  let sum = x.a + x.b;
   return sum;
 };
 
@@ -133,7 +133,7 @@ Hidden Class はオブジェクトのレイアウトも保存しており、プ�
 
 ```js:example_04.js
 const f(x) => {
-  let sum = x.a + a.b;
+  let sum = x.a + x.b;
   return sum;
 };
 
@@ -196,7 +196,7 @@ g(f(1, 0));
 ```
 
 でははじめに、このコードを Deopt Explorer で解析するために Node.js から V8 のトレースログを取得しましょう。
-手元で確認をしたい場合は、node の管渠を用意した上で上記コードをコピーし、後述のコマンドを入力しましょう。
+手元で確認をしたい場合は、node の環境を用意した上で上記コードをコピーし、後述のコマンドを入力しましょう。
 
 ```bash
 npx dexnode --out v8.log ./polymorphicExample.js ./
