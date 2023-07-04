@@ -1,5 +1,5 @@
 ---
-title: "など: Cybozu Frontend Weekly (2023-07-04号)"
+title: "styled-components v6 リリースなど: Cybozu Frontend Weekly (2023-07-04号)"
 emoji: "🌴"
 type: "tech"
 topics: ["CybozuFrontendWeekly", "frontend"]
