@@ -30,19 +30,18 @@ bike-shedding になりがちな style や convention 以外のルールにフ�
 https://github.com/styled-components/styled-components/releases/tag/v6.0.0
 
 styled-components の v6 メジャーバージョンアップデートが来ました。
-型を配布するようになった他、いくつかの内部実装の変更が多いようです。
+型定義を配布するようになったほか、内部実装の変更がいくつか入ったようです。
 
-社内ではマイグレーションガイドに従ってアップデートした結果エラーが発生したという情報が多く寄せられていたので、アップデートの際は腰を据えて実施しましょう。
+社内では Testing Libraray を利用して書いていた Test が落ちるようになったという情報が寄せられていたため、同様の環境でのアップデート作業は腰を据えて実施すると良いかもしれません。
 
-## CJS/ESM 周りが今アツい！
+## Deno/Bun による ComonJS に関する記事
 
 https://deno.com/blog/commonjs-is-hurting-javascript
 
 https://bun.sh/blog/commonjs-is-not-going-away
 
 Deno と Bun が CJS についての記事を投稿していて話題になっています。
-Deno は CJS の辛さについて、Bun は CJS の良さについてそれぞれ記述していて対比のようになっているのが特徴的ですね。
-
+Deno は CJS の辛さについて、Bun は CJS の良さについてそれぞれ記述しており一見対比しているようにも見えます。
 それぞれのランタイムで利用するコンテキストが異なるため一概には結論付けられませんが、今後の選択の参考になると良いですね。
 
 ## WebAssembly - web.dev
@@ -56,11 +55,11 @@ web.dev に WebAssembly 関連のページができました。
 https://kurtextrem.de/posts/svg-in-js
 
 SVG を JSX に埋め込むことによるバンドルサイズへの影響の話です。
-JSX へ SVG を埋め込むと JS サイズが増大するため、`<img>` での受け込みや SVG スプライトなどでうまくやろうという内容が詳細に解説されています。
+JSX へ SVG を埋め込むと JS サイズが増大するため、`<img>` での読み込みや SVG スプライトなどでうまくやろうという内容が詳細に解説されています。
 
 ## The Cost Of JavaScript in 2023
 
-https://speakerdeck.com/addyosmani/the-cost-of-javascript-in-2023
+https://www.youtube.com/watch?v=ZKH3DLT4BKw
 
 JS の実行を高速化するために必要なコード分割やハイドレーションなどの幅広いテクニックを俯瞰して見ることができる概論的な資料です。
 パフォーマンス改善に興味がある人はぜひ閲覧してみましょう。
