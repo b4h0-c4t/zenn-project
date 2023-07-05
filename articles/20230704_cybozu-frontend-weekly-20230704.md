@@ -34,7 +34,7 @@ styled-components の v6 メジャーバージョンアップデートが来ま�
 
 社内では Testing Libraray を利用して書いていた Test が落ちるようになったという情報が寄せられていたため、同様の環境でのアップデート作業は腰を据えて実施すると良いかもしれません。
 
-## Deno/Bun による ComonJS に関する記事
+## Deno/Bun による CommonJS に関する記事
 
 https://deno.com/blog/commonjs-is-hurting-javascript
 
