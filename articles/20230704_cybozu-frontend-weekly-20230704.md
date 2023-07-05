@@ -3,7 +3,7 @@ title: "styled-components v6 リリースなど: Cybozu Frontend Weekly (2023-07
 emoji: "🌴"
 type: "tech"
 topics: ["CybozuFrontendWeekly", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
