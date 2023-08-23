@@ -1,5 +1,5 @@
 ---
-title: "など: Cybozu Frontend Weekly (2023-08-22号)"
+title: "RedwoodJS Conference Build Competitionなど: Cybozu Frontend Weekly (2023-08-22号)"
 emoji: "☀️"
 type: "tech"
 topics: ["CybozuFrontendWeekly", "frontend"]
