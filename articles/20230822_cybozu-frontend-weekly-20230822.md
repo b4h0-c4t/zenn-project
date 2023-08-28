@@ -3,7 +3,7 @@ title: "RedwoodJS Build Competitionなど: Cybozu Frontend Weekly (2023-08-22号
 emoji: "☀️"
 type: "tech"
 topics: ["CybozuFrontendWeekly", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
