@@ -55,13 +55,13 @@ https://github.com/nodejs/node-core-test
 
 https://github.com/epicweb-dev/epic-stack/blob/main/docs/decisions/031-imports.md
 
-epic-stack が絶対パスのインポートに tsconfig のパスエイリアスではなく Node.js の import field を使うようになった決定です。
+epic-stack が、絶対パスのインポートに tsconfig.json の path alias の設定と package.json の import field を併用するようになった決定です。
 
 ## Next.js に next/testmode という概念が出現し MSW x Playwright のテストがやりやすくなりそう
 
 https://zenn.dev/uyas/articles/bc58a4bed15ed4
 
-Next に test mode という機能が増えたことで Playwright で Server Components でも API をモックしてテストをかけるようになったという記事です。
+Next.js に test mode という機能が増えたことで、Server Components でも API をモックしてテストをかけるようになったという記事です。
 
 ## Vercel と提携し、ちょっと社はより多くの日本企業に向けてフロントエンドクラウドを提供します
 
@@ -86,4 +86,4 @@ Node.js が `.env` ファイルをビルトインサポートするようにな�
 https://dropbox.tech/frontend/how-we-reduced-the-size-of-our-javascript-bundles-by-33-percent
 
 Dropbox が JS のバンドルサイズを 33% 削減した話です。
-コード分割やバンドルの見直し、ツリーシェイキングの適用といったモダンな手法の適用によって既存プロダクトの軽量化に成功したようですね。
+コード分割やバンドルの見直し、ツリーシェイキングの適用といったモダンな手法の適用によって既存プロダクトの JS サイズの軽量化に成功したようですね。
