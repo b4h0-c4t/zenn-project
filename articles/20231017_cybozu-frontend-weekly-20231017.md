@@ -24,7 +24,7 @@ https://ishadeed.com/article/photoshop-web-css/
 web 版の Photoshop で使われてる CSS の紹介記事です。
 
 さまざまな場面で flexbox を活用しており、記事内には flexbox を活用したコンポーネントの事例が紹介されています。
-また、多くの場所で Adobe が提供している web components を活用して View を作成しているようです。
+また、多くの場所で Lit をベースとした Web Components を活用して View を作成しているようです。
 
 ### Changes to the web.dev infrastructure
 
