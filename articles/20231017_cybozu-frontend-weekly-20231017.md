@@ -40,7 +40,7 @@ https://deno.com/blog/fresh-1.5
 
 Fresh 1.5 のリリース記事です。
 
-新しく `Partials` という SSR されたページにに対して、特定のコンポーネントのみを再描画させられるラップコンポーネントが追加されました。
+新しく `Partials` という SSR されたページに対して、特定のコンポーネントのみを再描画させられるラップコンポーネントが追加されました。
 また、`Link`に HTML 属性が追加され、現在のページやセクションを表現できるようになりました。
 
 ### Flat config rollout plans
@@ -48,7 +48,7 @@ Fresh 1.5 のリリース記事です。
 https://eslint.org/blog/2023/10/flat-config-rollout-plans/
 
 今年度末頃にリリース予定の ESLint v9 から flat config がデフォルトになり、`eslintrc` が非推奨になります。
-また、v10 のリリースとともに `eslintrc` 対応が終了するとのことなので、既存プロジェクトでのライブラリアップデートの際は注意しましょう。
+また、v10 のリリースとともに `eslintrc` 対応が終了するとのことなので、既存プロジェクトでのライブラリアップデートの際は注意が必要そうです。
 
 ### Write your own Zod
 
