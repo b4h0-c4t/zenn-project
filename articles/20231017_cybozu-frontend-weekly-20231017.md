@@ -1,5 +1,5 @@
 ---
-title: "Changes to the web.dev infrastructure など: Cybozu Frontend Weekly (2023-10-17号)"
+title: "web 版の Photoshop で使われてる CSS の紹介など: Cybozu Frontend Weekly (2023-10-17号)"
 emoji: "🍁"
 type: "tech"
 topics: ["CybozuFrontendWeekly", "frontend"]
