@@ -34,7 +34,7 @@ buttonElement.ariaPressed = true;
 例えば、`aria-labbelledby` のように他の要素を参照するような属性に対しては DOM API から値を参照、変更することができません。
 この辺りの実装に関しては他主要ブラウザでもまだ未実装のため、今後に期待しましょう。
 
-今回の Firefox のアップデートによって、Chrome、Firefox、Safari といった主要なブラウザ全てで ARIA reflection がサポート済みになりました。
+今回の Firefox のアップデートによって、主要なブラウザ全てで ARIA reflection がサポート済みになりました。
 
 ## `Cross-Origin-Embedder-Policy: credentialless`
 
@@ -53,4 +53,4 @@ COEP によるリソース制御を有効にするためには `require-corp` �
 今回サポートされた `credentialless` では、CORP が不適格なリソースの読み込みをブロックする他に、クロスオリジンのリクエスト制御に関する指定がないリソースに対して cookies 等のクレデンシャルを除外したリソースの読み込みを許可します。
 これによって機密性の高いリソースへのアクセスは COEP の指定によりブロックしつつ、それ以外のリソースはクロスオリジン設定をせずとも制限付きで読み込むことが可能になりました。
 
-この機能は現在、主要ブラウザのうち Chrome と Firefox が対応しており、Safari では未実装となっています。
+この機能は現在、主要ブラウザのうち Safari 以外はサポート済みです。
