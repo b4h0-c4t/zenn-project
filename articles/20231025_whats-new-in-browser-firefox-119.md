@@ -1,6 +1,6 @@
 ---
 title: "Firefox 119 から注目の新要素を紹介 - What's new in Browsers!"
-emoji: "🍁"
+emoji: "🎃"
 type: "tech"
 topics: ["Firefox", "browser", "frontend"]
 published: false
