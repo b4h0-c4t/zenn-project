@@ -3,7 +3,7 @@ title: "Firefox 119 から注目の新要素を紹介 - What's new in Browsers!"
 emoji: "🍁"
 type: "tech"
 topics: ["Firefox", "browser", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
@@ -45,12 +45,12 @@ COEP は、埋め込むリソースに対して Cross Origin Resource Policy (CO
 
 以前までは COEP に指定できる値は `require-corp` と `unsafe-none` の二種類がありました。
 
-`require-corp` は全てのサブリソースに対して CORP の指定を強制し、読み込むクロスオリジンリソースとして的確でないものをブロックします。
-`unsafe-none` は CORP の指定がなくともクロスオリジンリソースを読み込むことを許可します。
+- `require-corp` は全てのサブリソースに対して CORP の指定を強制し、読み込むクロスオリジンリソースとして的確でないものをブロックします。
+- `unsafe-none` は CORP の指定がなくともクロスオリジンリソースを読み込むことを許可します。
 
 COEP によるリソース制御を有効にするためには `require-corp` の指定が必要ですが、全てのサブリソースに対して CORP を指定することは現実的に難易度が高いと言えます。
 
-今回サポートされた `credentialless` では、CORP が不適格なリソースの読み込みをブロックする他に、クロスオリジンのリクエスト制御に関する指定がないリソースに対して cookies 等のクレデンシャルを除外してリソースの読み込みを行うという挙動を許可します。
+今回サポートされた `credentialless` では、CORP が不適格なリソースの読み込みをブロックする他に、クロスオリジンのリクエスト制御に関する指定がないリソースに対して cookies 等のクレデンシャルを除外したリソースの読み込みを許可します。
 これによって機密性の高いリソースへのアクセスは COEP の指定によりブロックしつつ、それ以外のリソースはクロスオリジン設定をせずとも制限付きで読み込むことが可能になりました。
 
 この機能は現在、主要ブラウザのうち Chrome と Firefox が対応しており、Safari では未実装となっています。
