@@ -40,7 +40,7 @@ buttonElement.ariaPressed = true;
 
 Cross Origin Embedder Policy (COEP) は HTTP フィールドの一つで、サイドチャネル攻撃のリスクから通信を守るためのポリシーです。
 
-COEP は、埋め込むリソースに対して Cross Origin Resource Policy (CORP) を命じさせるように強制することができます。
+COEP は、埋め込むリソースに対して Cross Origin Resource Policy (CORP) を明示させるように強制することができます。
 これによってクライアントへ意図しないリソースが読み込まれないことを保証することができます。
 
 以前までは COEP に指定できる値は `require-corp` と `unsafe-none` の二種類がありました。
