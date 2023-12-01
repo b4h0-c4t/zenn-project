@@ -15,6 +15,8 @@ What's new in Browsers!は、サイボウズのフロントエンドエンジニ
 
 ## UserActivation API
 
+https://developer.mozilla.org/ja/docs/Web/API/UserActivation
+
 UserActivation API は、そのページに対してユーザが現在アクティブであるかどうかと以前アクティブであったかどうかを取得できる実験的な機能です。
 
 `navigator.userActivation` から該当機能へアクセスすることができ、`hasBeenActive` と `isActive` という二種類のプロパティを参照することが可能です。
@@ -25,6 +27,8 @@ UserActivation API は、そのページに対してユーザが現在アクテ�
 UserActivation API は Firefox 120 でのフルサポートを以て、主要なブラウザすべてで利用可能になりました。
 
 ## Early Hints Preconnect
+
+https://developer.mozilla.org/ja/docs/Web/HTTP/Status/103
 
 Early Hints Preconnect は、サーバがリクエストに対する最終的なレスポンスを返す前にリソースのリンクヘッダーを送信するためのステータスコードです。
 Firefox でこの機能が有効化されたことにより、Cloudflare 等の Early Hints Preconnect を使用しているサービスでのページ読み込みがより高速化されます。
