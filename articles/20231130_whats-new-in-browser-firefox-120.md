@@ -1,5 +1,5 @@
 ---
-title: "Firefox 120 から注目の新要素を紹介 - What's new in Browsers!"
+title: "UserActivation APIが全ての主要ブラウザでフルサポート完了！ - What's new in Browsers!"
 emoji: "☃️"
 type: "tech"
 topics: ["Firefox", "browser", "frontend"]
@@ -34,4 +34,4 @@ Firefox でこの機能が有効化されたことにより、Cloudflare 等の 
 ![](/images/20231130_whats-new-in-browser-firefox-120/EarlyHints.png)
 
 Early Hints Preconnect は Firefox 120 でのサポートを以て、主要なブラウザすべてで利用可能になりました。
-一方で、preload については Firefox がフラグ月サポートになっており、Safari ではサポートされていないため注意が必要です。
+一方で、preload については Firefox がフラグ付きサポートになっており、Safari ではサポートされていないため注意が必要です。
