@@ -3,7 +3,7 @@ title: "Firefox 120 から注目の新要素を紹介 - What's new in Browsers!"
 emoji: "☃️"
 type: "tech"
 topics: ["Firefox", "browser", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
