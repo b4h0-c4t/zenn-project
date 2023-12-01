@@ -7,6 +7,8 @@ published: true
 publication_name: "cybozu_frontend"
 ---
 
+https://www.mozilla.org/en-US/firefox/120.0/releasenotes/
+
 What's new in Browsers!は、サイボウズのフロントエンドエンジニアがブラウザの最新情報から気になるトピックを紹介するシリーズです。
 
 今回は Firefox 120 からサポートされた機能 UserActivation API と Early Hints Preconnect を紹介します。
@@ -18,9 +20,9 @@ UserActivation API は、そのページに対してユーザが現在アクテ�
 `navigator.userActivation` から該当機能へアクセスすることができ、`hasBeenActive` と `isActive` という二種類のプロパティを参照することが可能です。
 ウィンドウにおけるユーザーのアクティブ状況は **粘着的な有効化** と **一時的な有効化** の二種類があり、それぞれの状態が `hasBeenActive` と `isActive` に紐づいています。
 
-使用例としては、ページが初めて一時的に有効化された際にアニメーションの読み込んで自動再生を始めるといったように、一般的にユーザの操作外で発火するとバッドプラクティスとして扱われるようなイベントのハンドリングに活用することができます。
+使用例としては、ページが初めて有効化された際にアニメーションを読み込んで自動再生を始めるといった、一般的にユーザの操作外で発火するとバッドプラクティスとして扱われるようなイベントのハンドリングに活用することができます。
 
-User Activation API は Firefox 120 でのフルサポートを以て、主要なブラウザすべてで利用可能になりました。
+UserActivation API は Firefox 120 でのフルサポートを以て、主要なブラウザすべてで利用可能になりました。
 
 ## Early Hints Preconnect
 
@@ -35,3 +37,5 @@ Firefox でこの機能が有効化されたことにより、Cloudflare 等の 
 
 Early Hints Preconnect は Firefox 120 でのサポートを以て、主要なブラウザすべてで利用可能になりました。
 一方で、preload については Firefox がフラグ付きサポートになっており、Safari ではサポートされていないため注意が必要です。
+
+Early Hints Preconnect は Firefox 120 での一部機能のフラグ付きサポートを以て、Safari 以外の主要ブラウザで全機能が利用可能になりました。
