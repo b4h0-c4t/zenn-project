@@ -7,6 +7,8 @@ published: true
 publication_name: "cybozu_frontend"
 ---
 
+※この記事は [Cybozu Frontend Advent Calendar 2023](https://adventar.org/calendars/9255) の 3 日目の記事です。
+
 https://www.mozilla.org/en-US/firefox/120.0/releasenotes/
 
 What's new in Browsers!は、サイボウズのフロントエンドエンジニアがブラウザの最新情報から気になるトピックを紹介するシリーズです。
