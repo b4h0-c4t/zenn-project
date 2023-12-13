@@ -1,0 +1,81 @@
+---
+title: "主要ブラウザで有効化された WasmGC とは何なのか"
+emoji: "⚙️"
+type: "tech"
+topics: ["frontend"]
+published: false
+publication_name: "cybozu_frontend"
+---
+
+※この記事は [Cybozu Frontend Advent Calendar 2023](https://adventar.org/calendars/9255) の 14 日目の記事です。
+
+## WasmGC とは
+
+https://github.com/WebAssembly/gc/blob/master/proposals/gc/Overview.md
+
+WasmGC(WebAssembly Garbage Collection)は、高級言語をより効果的に Wasm(WebAssembly) として利用するための機能として WebAssembly Community Group によって提案されました。
+Kotlin や Dart/Flutter のような VM にガベージコレクタを含む言語を Wasm へ移植する際にこの機能の恩恵を受けることができます。
+
+```kotlin
+import kotlinx.browser.document
+import kotlinx.dom.appendText
+import org.w3c.dom.HTMLDivElement
+
+fun main() {
+    (document.getElementById("warning") as HTMLDivElement).style.display = "none"
+    document.body?.appendText("Hello, ${greet()}!")
+}
+
+fun greet() = "world"
+```
+
+例えば、Kotlin でこのようなコードを実装した場合、一見以前までの記述と変わらないように見えますが、最新のアルファ版では [Kotlin/Wasm](https://kotlinlang.org/docs/wasm-overview.html#kotlin-wasm-performance) を利用した実装に代わっており、内部では WasmGC が有効になっています。
+
+## Wasm MVP の課題と課題の解消
+
+従来の Wasm MVP には高級言語を移植する際、いくつかの課題が存在していました。
+
+- ファイルサイズの肥大化
+- 非効率なプロファイリングやメモリリーク
+
+### ファイルサイズの肥大化
+
+Wasm MVP では、ガベージコレクションを言語機能に含むような高級言語を WebAssembly へコンパイルする際、それらの機能もソースコードと同様に移植する必要がありました。
+WebAssembly が動作する、V8 や Node.js といった VM の多くには既にガベージコレクタが組み込まれており、実質的にこれは余分な追加リソースといえます。
+
+WasmGC では、Wasm 側の VM が持つガベージコレクタを移植元言語のガベージコレクタとして利用できるため、リソースを軽減することができます。
+
+### 非効率なプロファイリングやメモリリーク
+
+Wasm と JavaScript は相互にデータをやり取りする際、Wasm Table を用いてデータの参照を行います。
+この手法では、JavaScript オブジェクトと Wasm 間での双方向リンクを持つことができず、VM 側のガベージコレクタは十分にデータのプロファイリングを実施することができません。
+また、高級言語に実装されているガベージコレクタは Wasm が提供するリニアメモリ空間と相性が悪いため、長時間アプリケーションを動作させることによって断片化等によるメモリリークを引き起こす可能性があります。
+
+WasmGC では、Wasm Table による値の参照ではなく、構造体や配列型を移植元のコードに提供することによって移植元コードの値を VM が制御できるようになります。
+これにより、移植元のコードのガベージコレクションを VM 側が実行できるようになるため、組み込みガベージコレクタが効率的にプロファイリングを実行できるようになり、ノンリニアメモリへのメモリ割り当てがサポートされるため、メモリリークの危険性も軽減されます。
+
+## WasmGC を扱う上でのコスト
+
+ここまで、WasmGC の活用によって得られるメリットを記述しました。
+一方、WasmGC を導入することによるコストも存在します。
+
+WasmGC は、移植元コードに対して WasmGC が定義している型を適用することで利用できます。
+つまり、移植元言語は WasmGC を利用するために型の書き換えを実施しなければなりません。
+
+WasmGC の仕様からは型付き関数の参照やヒープメモリに格納するための構造体が提供されているため、それらを利用して移植元コードを構築する必要があります。
+
+https://github.com/WebAssembly/gc/blob/main/proposals/gc/MVP.md#types
+
+## WasmGC はどう使うのか
+
+WasmGC を取り入れるための作業を実施するのは主に言語システム本体やその拡張に携わっている開発者であるため、多くの開発者は WasmGC の仕様に直接触れることなく恩恵を受けることになります。
+
+WasmGC は、既存の Wasm MVP での実装を完全に刷新するものではなく、あくまで拡張という位置付けをしています。
+そのため、前述した WasmGC を扱う上でのコストとそれによって得られるメリットを勘案してどちらかを選択することになります。
+
+Kotlin や Dart のように公式が WasmGC に対応したパッケージを配布している場合、ユーザはほとんどの場合でコストを支払うことなく WasmGC を取り入れることが可能です。
+一方で未サポートの場合は自身でキャストを実施する必要があるため、Wasm MVP での移植と比較して敷居が高くなるケースが多いと思われます。
+
+## WasmGC ブラウザ互換性
+
+Chrome 119、Firefox 120 や Edge 119 といった Safari を除く最新の主要ブラウザで有効化されています。
