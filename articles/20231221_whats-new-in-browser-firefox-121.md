@@ -1,5 +1,5 @@
 ---
-title: "`:has()` が全ての主要ブラウザで利用可能に！ - What's new in Browsers!"
+title: ":has() が全ての主要ブラウザで利用可能に！ - What's new in Browsers!"
 emoji: "🎅"
 type: "tech"
 topics: ["Firefox", "browser", "frontend"]
