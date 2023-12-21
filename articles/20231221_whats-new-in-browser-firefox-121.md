@@ -15,6 +15,8 @@ What's new in Browsers!は、サイボウズのフロントエンドエンジニ
 
 ## `:has()`
 
+https://developer.mozilla.org/ja/docs/Web/CSS/:has
+
 `:has()` は CSS の擬似クラスで、引数に渡した相対セレクタとマッチする要素が存在する要素を表します。
 
 例えば、このようなスタイルを記述した場合、子要素に `h2` を含む `section` に対して `border: solid 1px #333` を適用するという表現になります。
@@ -29,9 +31,47 @@ section:has(> h2) {
 
 前述したスタイルを例に `:has()` 以前との実装例を比較するのこのようになります。
 
+```html
+<h1>border with :has()</h1>
+<section>
+  <h2>h2 title</h2>
+  <p>hoge</p>
+  <section>
+    <h3>h3 title</h3>
+    <p>fuga</p>
+  </section>
+</section>
+<section>
+  <h3>h3 title</h3>
+  <p>fuga</p>
+</section>
+```
+
 @[codepen](https://codepen.io/b4h0-c4t/pen/dyrbVBX)
 
+```css
+section:has(> h2) {
+  border: solid 1px #333;
+}
+```
+
 @[codepen](https://codepen.io/b4h0-c4t/pen/MWxgOKd)
+
+```css
+.section_with_h2 {
+  border: solid 1px #333;
+}
+```
+
+```javascript
+const sections = document.querySelectorAll("section");
+
+for (let section of sections) {
+  for (let child of section.children) {
+    if (child.tagName === "H2") section.className = "section_with_h2";
+  }
+}
+```
 
 より具体的なユースケースについては、[Cybozu Frontend Advent Calendar 2023](https://adventar.org/calendars/9255) 18 日目の記事が参考になるので合わせてご一読ください。
 
@@ -40,6 +80,8 @@ https://zenn.dev/yy616/articles/188e0761277fdf
 `:has()` は Firefox 121 でのサポートをもって主要ブラウザ全てで利用可能になりました。
 
 ## iframe の遅延読み込み
+
+https://developer.mozilla.org/ja/docs/Web/HTML/Element/iframe#loading
 
 iframe に遅延読み込みの仕組みが導入されました。
 これにより、画面外にある iframe の読み込みをユーザのスクロールまで延期できるようになり、ページ全体の読み込みが効率化されます。
