@@ -31,7 +31,7 @@ section:has(> h2) {
 
 前述したスタイルを例に `:has()` 以前との実装例を比較するのこのようになります。
 
-```html
+```html:index.html
 <h1>border with :has()</h1>
 <section>
   <h2>h2 title</h2>
@@ -49,7 +49,7 @@ section:has(> h2) {
 
 @[codepen](https://codepen.io/b4h0-c4t/pen/dyrbVBX)
 
-```css
+```css:with_has.css
 section:has(> h2) {
   border: solid 1px #333;
 }
@@ -57,13 +57,13 @@ section:has(> h2) {
 
 @[codepen](https://codepen.io/b4h0-c4t/pen/MWxgOKd)
 
-```css
+```css:without_has.css
 .section_with_h2 {
   border: solid 1px #333;
 }
 ```
 
-```javascript
+```javascript:without_has.js
 const sections = document.querySelectorAll("section");
 
 for (let section of sections) {
