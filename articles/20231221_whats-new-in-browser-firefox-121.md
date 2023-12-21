@@ -3,7 +3,7 @@ title: ":has() が全ての主要ブラウザで利用可能に！ - What's new 
 emoji: "🎅"
 type: "tech"
 topics: ["Firefox", "browser", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
