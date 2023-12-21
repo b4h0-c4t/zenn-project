@@ -32,7 +32,7 @@ section:has(> h2) {
 前述したスタイルを例に `:has()` 以前との実装例を比較するのこのようになります。
 
 ```html:index.html
-<h1>border with :has()</h1>
+<h1>border with(out) :has()</h1>
 <section>
   <h2>h2 title</h2>
   <p>hoge</p>
