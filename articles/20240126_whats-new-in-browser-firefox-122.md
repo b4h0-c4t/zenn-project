@@ -1,5 +1,5 @@
 ---
-title: " - What's new in Browsers!"
+title: "<select>要素がより扱いやすく - What's new in Browsers!"
 emoji: "🎍"
 type: "tech"
 topics: ["Firefox", "browser", "frontend"]
