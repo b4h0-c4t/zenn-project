@@ -13,14 +13,14 @@ What's new in Browsers!は、サイボウズのフロントエンドエンジニ
 
 今回はFirefox 122からサポートされた機能の中からLargestContentfulPaint APIと<select>要素に追加された2つの新機能について紹介します。
 
-## LargeContentfulPaint API
+## LargestContentfulPaint API
 
 https://developer.mozilla.org/en-US/docs/Web/API/LargestContentfulPaint
 
-Performance APIの1つである、LargeContentfulPaint APIがサポートされました。
-このAPIは、ユーザの入力前にLargest Contentが描画されるタイミングに関する情報を提供できます。
+Performance APIsの1つである、LargestContentfulPaint APIがサポートされました。
+このAPIは、ユーザの入力前に大きなコンテンツが描画されるタイミングに関する情報を提供できます。
 
-既存のPerformanceAPIと同様に[PerformanceEntry](https://developer.mozilla.org/ja/docs/Web/API/PerformanceEntry)から継承されており、計測を実施したい対象となるWebサイトにオブザーバーを設置することで利用できます。
+既存のPerformance APIsと同様に[PerformanceEntry](https://developer.mozilla.org/ja/docs/Web/API/PerformanceEntry)から継承されており、計測を実施したい対象となるWebサイトにオブザーバーを設置することで利用できます。
 
 ```javascript
 const observer = new PerformanceObserver((list) => {
