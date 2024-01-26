@@ -3,7 +3,7 @@ title: "<select>要素がより扱いやすく - What's new in Browsers!"
 emoji: "🎍"
 type: "tech"
 topics: ["Firefox", "browser", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
