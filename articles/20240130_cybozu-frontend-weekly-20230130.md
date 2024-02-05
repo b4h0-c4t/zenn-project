@@ -3,7 +3,7 @@ title: "Next.js 14.1など: Cybozu Frontend Weekly (2024-01-30号)"
 emoji: "🧧"
 type: "tech"
 topics: ["CybozuFrontendWeekly", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
