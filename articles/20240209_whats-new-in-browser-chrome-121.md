@@ -3,7 +3,7 @@ title: "画面キャプチャをより厳密にできるElement Capture API - Wh
 emoji: "🍫"
 type: "tech"
 topics: ["Firefox", "browser", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
