@@ -18,22 +18,22 @@ What's new in Browsers!は、サイボウズのフロントエンドエンジニ
 https://developer.chrome.com/docs/web-platform/element-capture
 
 Element Capture APIは、任意のHTML要素をキャプチャするためのAPIです。
-主なユースケースとして、通話アプリケーションでの画面共有の実装が挙げられますね。
+主なユースケースとして、通話アプリケーションでの画面共有の実装が挙げられます。
 
 ### 既存の画面キャプチャ
 
 ユーザの画面をキャプチャし、メディアストリーム化する既存のAPIとしてScreen Capture APIがあります。
-以前まではChrome 104でサポートされた[Region Caputure](https://developer.chrome.com/docs/web-platform/region-capture?hl=ja)と呼ばれる手法で画面のクロップを実現していました。
+以前まではChrome 104でサポートされた[Region Caputure](https://developer.chrome.com/docs/web-platform/region-capture?hl=ja)と呼ばれる手法で画面の切り抜きを実現していました。
 
 ```javascript
 const captureTarget = document.querySelector("#captureTarget");
 const cropTarget = await CropTarget.fromElement(mainContentArea);
 ```
 
-このAPIは座標に依存せず、任意のHTML要素をターゲットとして画面のクロップを行うため、表示ずれによる意図しない情報の送信を防ぐことができました。
+このAPIは座標に依存せず、任意のHTML要素をターゲットとして画面の切り抜きを行うため、表示ずれによる意図しない情報の送信を防ぐことができました。
 
 一方、Region Captureはターゲットの位置とサイズを基準として画面に表示されているピクセルをキャプチャします。
-これにより、指定した要素上に異なる要素がfixされている場合は上に重なっている要素キャプチャするため、意図しない要素がキャプチャに映り込んでしまうことがありました。
+これにより、指定した要素上に異なる要素がfixされている場合は上に重なっている要素をキャプチャするため、意図しない要素がキャプチャに映り込んでしまうことがありました。
 
 ### 課題の解決
 
@@ -46,7 +46,7 @@ const restrictionCropTarget = await RestrictionTarget.fromElement(
 );
 ```
 
-クロップする領域の厳密性が保たれることで、意図しない領域のキャプチャによるセキュリティリスクがより軽減されます。
+切り抜く領域の厳密性が保たれることで、意図しない領域のキャプチャによるセキュリティリスクがより軽減されます。
 
 ### 機能の有効化
 
