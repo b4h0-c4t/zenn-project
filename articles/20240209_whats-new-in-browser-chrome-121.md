@@ -30,7 +30,7 @@ const captureTarget = document.querySelector("#captureTarget");
 const cropTarget = await CropTarget.fromElement(mainContentArea);
 ```
 
-このAPIは座標に依存せず、任意のHTML要素をターゲットとして画面の切り抜きを行うため、表示ずれによる意図しない情報の送信を防ぐことができました。
+このAPIはグローバルの絶対座標に依存せず、任意のHTML要素をターゲットとして画面の切り抜きを行うため、表示ずれによる意図しない情報の送信を防ぐことができました。
 
 一方、Region Captureはターゲットの位置とサイズを基準として画面に表示されているピクセルをキャプチャします。
 これにより、指定した要素上に異なる要素がfixされている場合は上に重なっている要素をキャプチャするため、意図しない要素がキャプチャに映り込んでしまうことがありました。
