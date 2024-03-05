@@ -3,7 +3,7 @@ title: "すべての主要ブラウザでshadowrootmode実装 - What's new in Br
 emoji: "🎍"
 type: "tech"
 topics: ["Firefox", "browser", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
