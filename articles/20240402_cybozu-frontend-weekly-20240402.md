@@ -26,7 +26,7 @@ CloudflareのD1とHyperdriveがGAになりました。
 同時に正式な料金も発表されており、D1は無料枠があるとのことです。
 また、この無料博は今後削除する予定がないと強調されていました。
 
-HyperdriveはWorkerd Paid Plan ($5/mo)に入っている場合追加コストなしで利用かのです。
+HyperdriveはWorkerd Paid Plan ($5/mo)に入っている場合追加コストなしで利用できます。
 
 ### Bun 1.1
 
@@ -44,7 +44,7 @@ https://qiita.com/uhyo/items/787a475bb618811d3771
 
 ※本記事はエイプリルフール記事です。
 
-TypeScriptの時期バージョン5.5.555に実装予定のArranged Field Definitiionという機能を紹介するジョーク記事です。
+TypeScriptの時期バージョン5.5.555に実装予定のArranged Field Definitionという機能を紹介するジョーク記事です。
 読み応えがあるのでぜひご一読ください。
 
 ### React Server Components now in RedwoodJS
@@ -109,7 +109,7 @@ https://web.dev/articles/light-dark
 
 CSS Module Level 5で追加された `light-dark()` を活用してより柔軟にダークモード対応をしようという記事です。
 
-CSS Color Module Level 4の `Canvas` と `CanvasText` を組み合わせて簡易的に実現できていたダークモード対応ですが、`light-dark()` の登場によってテキスト色や背景色以外のCSSプロパティに対しても任意を色を適用可能になりました。
+CSS Color Module Level 4の `Canvas` と `CanvasText` を組み合わせて簡易的に実現できていたダークモード対応ですが、`light-dark()` の登場によってテキスト色や背景色以外のCSSプロパティに対して任意の色を適用可能になりました。
 
 ### Power of Partial Prerendering with Bun
 
