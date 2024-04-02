@@ -51,7 +51,7 @@ TypeScriptの時期バージョン5.5.555に実装予定のArranged Field Defini
 
 https://redwoodjs.com/blog/rsc-now-in-redwoodjs
 
-RedwoodJSがBighornエポックのプレビューにてにてRSCをサポートしました。
+RedwoodJSがBighornエポックのプレビューにてRSCをサポートしました。
 
 ### Intent to prototype & ship: URL.parse()
 
