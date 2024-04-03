@@ -3,7 +3,7 @@ title: "RedwoodJSがRSCに対応: Cybozu Frontend Weekly (2024-04-02号)"
 emoji: "🌸"
 type: "tech"
 topics: ["CybozuFrontendWeekly", "frontend"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
