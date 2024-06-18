@@ -62,7 +62,7 @@ Figma上に構築されたUIコンポーネントのデザインデータです�
 
 Figma上での情報とWebサイトで確認できる情報にはほとんど差がないように見えますが、実際にはWebサイト側の方がより多くの情報を記載しています。
 
-例として[基本デザインのカラー](https://design.digital.go.jp/introduction/about/)に焦点を当ててみます。
+例として[基本デザインのカラー](https://design.digital.go.jp/foundations/color/)に焦点を当ててみます。
 
 Figmaデータ上では、デジタル庁デザインシステムが定義しているカラースキームが簡単な説明とともに提供されています。
 
