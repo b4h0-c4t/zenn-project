@@ -3,7 +3,7 @@ title: "Explore デジタル庁デザインシステム ベータ版"
 emoji: "🏙️"
 type: "tech"
 topics: ["frontend", "design system"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
