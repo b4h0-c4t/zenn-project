@@ -3,7 +3,7 @@ title: "すべての主要ブラウザで利用可能になったアットルー
 emoji: "🏃"
 type: "tech"
 topics: ["frontend", "browser", "css"]
-published: false
+published: true
 publication_name: "cybozu_frontend"
 ---
 
